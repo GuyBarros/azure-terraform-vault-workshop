@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
+set -e
 # Configures the Vault server for a database secrets demo
 
 # cd /tmp
