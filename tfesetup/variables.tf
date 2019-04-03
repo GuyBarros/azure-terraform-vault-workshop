@@ -12,10 +12,13 @@ variable "TFE_TOKEN" {
 
 variable "TFE_WORKSPACE" {
   description = "The TFE workspace  to create the variables"
-  default     = "app.terraform.io"
+  
 }
 
 variable "TFE_ORGANIZATION" {
   description = "The TFE Organization to create workspaces "
   
+}
+variable "prefix" {
+  description = "This prefix will be included in the name of most resources."
 }

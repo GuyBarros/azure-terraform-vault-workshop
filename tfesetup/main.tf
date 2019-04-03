@@ -16,7 +16,7 @@ data "tfe_workspace" "demostack" {
 
 resource "tfe_variable" "prefix" {
   key          = "prefix"
-  value        =  ""
+  value        =  "${var.prefix}"
   category     = "terraform"
   sensitive    = false
   workspace_id = "${var.TFE_ORGANIZATION}/${var.TFE_WORKSPACE}"
